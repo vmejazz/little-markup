@@ -1,0 +1,89 @@
+.art {
+  display: -ms-grid;
+  display:     grid;
+  height: 211px;
+
+  color: #ffffff;
+
+  grid-template: "main . fill" 1fr
+  "main . ." 10px
+  "main . moreno" 1fr
+  / 2fr 10px 1fr
+  ;
+
+  @media (min-width: $tablet) {
+    height: auto;
+
+    grid-template: "main main main . fill" 241px
+    "main main main . ." 10px
+    "main main main . moreno" 241px
+    / 1fr 10px 1fr 10px 1fr
+    ;
+  }
+}
+
+.art__text {
+  @include margin-padding-reset();
+
+  padding-top: 20px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+
+
+  @media (min-width: $tablet) {
+    padding: 0;
+    padding-top: 30px;
+    padding-right: 45px;
+    padding-left: 25px;
+  }
+}
+
+.art__main {
+  overflow: hidden;
+  overflow-y: scroll;
+
+  background: #a2a9b7;
+
+  grid-area: main;
+
+
+  @media (min-width: $tablet) {
+    overflow: auto;
+    overflow-y: auto;
+  }
+}
+
+.art__fill {
+  font-size: 21.2271px;
+  line-height: 30px;
+
+  background: #a2a9b7;
+
+  grid-area: fill;
+}
+
+.art__moreno {
+  font-size: 21.2271px;
+  line-height: 30px;
+
+  background: #a2a9b7;
+
+  grid-area: moreno;
+}
+
+.art__title {
+  bottom: 6px;
+  left: 13px;
+
+  @media (min-width: $tablet) {
+    bottom: 10px;
+    left: 15px;
+  }
+}

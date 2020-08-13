@@ -1,0 +1,52 @@
+.magic {
+  display: grid;
+  margin-top: 10px;
+
+  grid-template: "yet yet yet" 155px
+  ". . ." 10px
+  "crosspoint . vector" 155px
+  ". . ." 10px
+  "leadership . genius" 155px
+  / 1fr 10px 1fr
+  ;
+
+  @media (min-width: $tablet) {
+    height: auto;
+
+    grid-template: "leadership . yet yet yet" 155px
+    ". . . . ." 10px
+    "genius . crosspoint . vector" 155px
+    / 1fr 10px 1fr 10px 1fr
+    ;
+  }
+}
+
+.magic__leadership {
+  background: #ffaa87;
+
+  grid-area: leadership;
+}
+
+.magic__yet {
+  background: #ffaa87;
+
+  grid-area: yet;
+}
+
+.magic__genius {
+  background: #f55e62;
+
+  grid-area: genius;
+}
+
+.magic__cross-point {
+  background: #ffaa87;
+
+  grid-area: crosspoint;
+}
+
+.magic__vector {
+  background: #c7abd4;
+
+  grid-area: vector;
+}

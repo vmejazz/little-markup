@@ -1,0 +1,17 @@
+.page-footer {
+  height: 90px;
+  margin-top: 10px;
+
+  background: #c4c4c4;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.page-footer__title {
+  padding-bottom: 6px;
+}

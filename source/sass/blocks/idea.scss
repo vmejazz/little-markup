@@ -1,0 +1,28 @@
+.idea {
+  display: grid;
+  margin-bottom: 10px;
+
+  grid-template: "staff . light" 155px
+  ". . ." 10px
+  "conformism conformism conformism" 155px
+  / 1fr 10px 1fr
+  ;
+}
+
+.idea__staff {
+  background: #e8ebed;
+
+  grid-area: staff;
+}
+
+.idea__light {
+  background: #e8ebed;
+
+  grid-area: light;
+}
+
+.idea__conformism {
+  background: #e8ebed;
+
+  grid-area: conformism;
+}

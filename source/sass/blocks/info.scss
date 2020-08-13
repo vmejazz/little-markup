@@ -1,0 +1,58 @@
+.info {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: grid;
+    margin-top: 10px;
+
+    grid-template: "modern . description" 241px
+    ". . description" 10px
+    "staff . description" 241px
+    / 1fr 10px 2fr
+    ;
+  }
+}
+
+.info__modern {
+  background: #e3ebd3;
+
+  grid-area: modern;
+}
+
+.info__staff {
+  color: #ffffff;
+
+  background-image: url("../img/staff.png");
+  background-size: cover;
+
+  grid-area: staff;
+}
+
+.card__attention {
+  display: none;
+}
+
+.info__staff:hover {
+  background-image: url("../img/blur.png");
+}
+
+.info__staff:hover {
+  cursor: pointer;
+}
+
+.info__staff:hover .card__attention {
+  display: inline;
+}
+
+.info__description {
+  background: #e3ebd3;
+
+  grid-area: description;
+}
+
+.info__staff:hover .info__title {
+  color: transparent;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+
+  transition: text-shadow 2.0 ease-out;
+}

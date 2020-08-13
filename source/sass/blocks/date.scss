@@ -1,0 +1,22 @@
+.date {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.date__text {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.date__line {
+  width: 100%;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+
+  border-bottom: 1px solid #dbdbdb;
+}

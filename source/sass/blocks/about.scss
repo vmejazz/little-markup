@@ -1,0 +1,36 @@
+.about {
+  display: grid;
+
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 155px;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 155px 155px;
+  }
+}
+
+.about__introjection {
+  background: #90bce8;
+
+  grid-column-end: 2;
+  grid-column-start: 1;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+}
+
+.about__staff {
+  background: #febf26;
+
+  grid-column-end: 3;
+  grid-column-start: 2;
+
+  @media (min-width: $tablet) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}

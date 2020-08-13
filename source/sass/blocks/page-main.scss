@@ -1,0 +1,9 @@
+.page-main__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
